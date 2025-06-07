@@ -33,8 +33,15 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 CORS_ALLOW_ALL_ORIGINS = False
 
-ALLOWED_HOSTS = [ "https://bookstore-login.onrender.com",
-                 ]
+CORS_ALLOWED_ORIGINS = [
+    "https://bookstore-login.onrender.com",
+]
+
+ALLOWED_HOSTS = [ 
+    "https://bookstore-login.onrender.com",
+    "bookstore-login.onrender.com",
+    "bookstore-backend-sszl.onrender.com",
+]
 
 
 
