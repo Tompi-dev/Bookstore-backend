@@ -25,11 +25,13 @@ SECRET_KEY = 'django-insecure-fpud4#v%1lb++z&#0wk24^ye)10-(x0k8e4xrf8r(du)h$b)cf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+CORS_ALLOW_ALL_ORIGINS = False
+
+ALLOWED_HOSTS = [ "https://bookstore-login.onrender.com",
+                 ]
 
 
 
-# Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -89,7 +91,7 @@ DATABASES = {
     }
 }
 
-CORS_ALLOW_ALL_ORIGINS = True
+
 
 
 # Password validation
