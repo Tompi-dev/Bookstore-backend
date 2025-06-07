@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -24,6 +25,11 @@ SECRET_KEY = 'django-insecure-fpud4#v%1lb++z&#0wk24^ye)10-(x0k8e4xrf8r(du)h$b)cf
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+
+
+STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 
 CORS_ALLOW_ALL_ORIGINS = False
 
