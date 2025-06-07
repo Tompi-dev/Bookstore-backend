@@ -38,7 +38,7 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 ALLOWED_HOSTS = [ 
-    "https://bookstore-login.onrender.com",
+    
     "bookstore-login.onrender.com",
     "bookstore-backend-sszl.onrender.com",
 ]
